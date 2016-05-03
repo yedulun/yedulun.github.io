@@ -53,6 +53,18 @@ a{
 .site-top ul li a{
   color: #fff;
 }
+.site-top li:hover .fa-qq{
+  color: #5C9FAF;
+}
+.site-top li:hover .fa-wechat{
+  color: #207D59;
+}
+.site-top li:hover .fa-weibo{
+  color: #B85B53;
+}
+.site-top li:hover .fa-github-square{
+  color: #3B5B8E;
+}
 .site-top ul li img{
   position: absolute;
   display: none;
@@ -446,7 +458,7 @@ a{
   width: 1050px;
   height: 400px;
   display: none;
-  padding-top: 100px;
+  
 }
 .content-envelope .contact-box{
   background-color: #fff;
@@ -492,7 +504,12 @@ address a{
   color: #5CB48E;
   margin: 0 5px 0 10px;
 }
-
+.hireme{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 80px;
+}
 
 
 
