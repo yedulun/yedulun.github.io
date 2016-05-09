@@ -213,7 +213,7 @@ a{
   float: right;
   margin-top: 20px;
   width: 330px;
-  padding: 50px 30px;
+  padding: 30px 30px 29px;
   background-color: #fff;
 }
 .box-content h3{
@@ -242,6 +242,9 @@ a{
 .skill-bars .progress{
   height: 10px;
   background-color: #5CB481;
+}
+.skill-bars .progress-photoshop{
+  width: 50%;
 }
 .skill-bars .progress-html{
   width: 85%;
