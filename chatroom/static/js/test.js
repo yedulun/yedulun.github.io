@@ -62,7 +62,7 @@ $(function(){
 							var ros = roster[i];
 							if(ros.subscription =='both' || ros.subscription=='to'){
 								bothRoster.push(ros);
-								friends.append('<li><a href=""><div class="headimg"><img src=""></div><span class="friendname">' + ros.name + '</span></a></li>');
+								friends.append('<li><a href=""><div class="headimg"><img src="img/user.png"></div><span class="friendname">' + ros.name + '</span></a></li>');
 								friendswindow.find(".scrollbox").eq(0).after('<div class="scrollbox" id="scrollFriend' + ros.name + '"</div>');
 								friendnum++;
 							}
@@ -82,7 +82,6 @@ $(function(){
 				conn.onClosed();
 			},
 			onTextMessage : function(message){
-				console.log(message);
 				var from = message.from;
 				var data = message.data;
 				var d = new Date();
@@ -90,12 +89,12 @@ $(function(){
 				var m = d.getMinutes();
 				var now = h + ":" + m; 
 				if(message.type == 'chatroom'){
-					$("#scrollChatroom").append('<div class="dialog"><a href="#" class="headimg"><img src=""></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + data + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>')
+					$("#scrollChatroom").append('<div class="dialog"><a href="#" class="headimg"><img src="img/user.png"></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + data + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>')
 					$(".chat_content").mCustomScrollbar("scrollTo","bottom");
 					return;
 				}
 				var scrollBox = $("#scrollFriend" + from);
-				scrollBox.append('<div class="dialog"><a href="#" class="headimg"><img src=""></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + data + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
+				scrollBox.append('<div class="dialog"><a href="#" class="headimg"><img src="img/user.png"></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + data + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
 				$(".chat_content").mCustomScrollbar("scrollTo","bottom");
 			},
 			onEmotionMessage: function(message){
@@ -178,11 +177,11 @@ $(function(){
 					
 					//var scrollBox = $("#scrollFriend" + to);
 
-					console.log(msg);
+					//console.log(msg);
 					var msgtext = Easemob.im.Utils.parseLink(Easemob.im.Utils.parseEmotions(encode(msg)));
-					console.log(msgtext);
+					//console.log(msgtext);
 
-					scrollBox.append('<div class="dialog"><a href="" class="headimg" onclick="test(this); return false;"><img src=""></a><div class="dialog_top"><a href="" class="uname">' + username + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + msgtext + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');				
+					scrollBox.append('<div class="dialog mine"><a href="" class="headimg" onclick="test(this); return false;"><img src="img/user.png"></a><div class="dialog_top"><span class="dtime">' + now + '</span><a href="" class="uname">' + username + '</a></div><p><i></i><span class="dcon">' + msgtext + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');				
 					$(".chat_content").mCustomScrollbar("scrollTo","bottom");
 				}
 			};
@@ -192,27 +191,27 @@ $(function(){
 
 		var handlePresence = function(e){
 			if (e.type == 'subscribe') {
-				console.log(e);
-				/**
-				var user = e.from;
-				conn.subscribed({
-					to: user,
-					message:"[resp:true]"
-				});
-				**/
+				 if (e.status) {  
+		            if (e.status.indexOf('resp:true') > -1) {  
+		                //agreeAddFriend(e.from);  
+		                return;  
+		            }  
+		        }  
+				$(".allMessages").append('<li><a href="javascript:return false"><p class="req_name">' + e.from + '</p><span class="req_item">请求加你为好友</span><button class="req_accept">同意</button><button class="req_reject">拒绝</button><span class="res_accept">已接受</span><span class="res_reject">已拒绝</span></a></li>')
+
 			}
 			if (e.type == 'subscribed') {
-				$("#allFriends").append('<li><a href=""><div class="headimg"><img src=""></div><span class="friendname">' + e.from + '</span></a></li>');
+				$(".allMessages").append('<li><a href="javascript:return false"><p class="req_name">' + e.from + '</p><span class="req_item">同意了你的好友请求</span>')
+				$("#allFriends").append('<li><a href=""><div class="headimg"><img src="img/user.png"></div><span class="friendname">' + e.from + '</span></a></li>');
 				$(".chat_content_friend").find(".scrollbox").eq(0).after('<div class="scrollbox" id="scrollFriend' + e.from + '"</div>');
 				$(".friendnum").html(parseInt($(".friendnum").html()) + 1);
 			}
+			//对方拒绝加你为好友
+			if (e.type == 'unsubscribed') {
+				$(".allMessages").append('<li><a href="javascript:return false"><p class="req_name">' + e.from + '</p><span class="req_item">拒绝加你为好友</span>');
+			}
 			if(e.type == 'joinChatRoomSuccess'){
-				conn.sendTextMessage({
-				    to: "132598658687304132",//目标user
-				    msg: "msg",//文本消息
-				    type: "groupchat",//必填字段，无需修改
-				    roomType: "chatroom"//必填字段，无需修改
-				}); 
+				
 			}
 		}
 
@@ -233,9 +232,9 @@ $(function(){
 			var now = h + ":" + m; 
 
 			if(message.type == 'chatroom'){
-				$("#scrollChatroom").append('<div class="dialog"><a href="" class="headimg" onclick="test(this); return false;"><img src=""></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + res + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
+				$("#scrollChatroom").append('<div class="dialog"><a href="" class="headimg" onclick="test(this); return false;"><img src="img/user.png"></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + res + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
 			}else {
-				$("#scrollFriend" + from).append('<div class="dialog"><a href="" class="headimg" onclick="test(this); return false;"><img src=""></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + res + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
+				$("#scrollFriend" + from).append('<div class="dialog"><a href="" class="headimg" onclick="test(this); return false;"><img src="img/user.png"></a><div class="dialog_top"><a href="" class="uname">' + from + '</a><span class="dtime">' + now + '</span></div><p><i></i><span class="dcon">' + res + '</span></p><div class="at"><a href="javascript:void(0)"><b></b><span>@Ta</span></a></div></div>');
 			}
 			$(".chat_content").mCustomScrollbar("scrollTo","bottom");
 		}
@@ -298,6 +297,31 @@ $(function(){
             }
         }
 
+       	$(".allMessages").on("click", ".req_accept", function(){
+			var messageFrom = $(this).parent().find(".req_name").html();
+			
+	        $(this).parent().find("button").hide();
+	        $(this).parent().find(".res_accept").show();
+	        conn.subscribe({
+	            to : messageFrom,
+	            message : "[resp:true]"//同意后发送反加对方为好友的消息，反加消息标识[resp:true]
+	        });
+	        conn.subscribed({
+	            to : messageFrom,
+	            message : "[resp:true]"//同意后发送反加对方为好友的消息，反加消息标识[resp:true]
+	        });
+	        alert("同意");
+		})
+
+
+       	$(".allMessages").on("click", ".req_reject", function(){
+       		var messageFrom = $(this).parent().find(".req_name").html();
+       		$(this).parent().find("button").hide();
+	        $(this).parent().find(".res_reject").show();
+       		conn.unsubscribed({
+		        to : messageFrom
+		    });
+       	})
 
 });
 

@@ -13,8 +13,7 @@ $(function(){
 		scrollInertia: 200
 	});
 
-
-
+	
 
 
 	//click tabnav btn chatroom, notice, friend
@@ -27,7 +26,7 @@ $(function(){
 		if (index==0) {
 			tofriend ="132598658687304132";
 		}
-		if (index==2) {
+		if (index==1) {
 			$(".scrollbox-friend").css("display", "block");
 		}
 		return false;

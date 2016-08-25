@@ -21,6 +21,8 @@
 
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 <link rel="stylesheet" type="text/css" href="static/css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" type="text/css" href="../css/resume.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
 
 <!--[if lte IE 9]>
 <script src="static/js/jplayer/jquery.jplayer.min.js"></script>
@@ -29,18 +31,24 @@
 
 </head>
 <body>
-	<div class="box-header">
-		
+	<div class="site-bg"></div>
+	<div class="site-bg-overlay"></div>
+	<div class="site-top">
+		<div class="site-top-inside" id="site-top">
+			<ul>
+				<li title="QQ"><i class="fa fa-qq fa-lg"></i><i class="fa fa-sort-up fa-lg triangle"></i><img src="../images/qq.jpg"></li>
+				<li title="微信"><i class="fa fa-wechat fa-lg"></i></i><i class="fa fa-sort-up fa-lg triangle"></i><img src="../images/wechat.jpg"></li>
+				<li title="微博"><a href="http://weibo.com/1703720461/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1"><i class="fa fa-weibo fa-lg"></i></a></li>
+				<li title="Github"><a href="https://github.com/yedulun"><i class="fa fa-github-square fa-lg"></i></a></li>
+				<span class="login"><a href="" class="header-login">登录</a></span>
+			</ul>
+		</div>
 	</div>
 	
 	<div class="wrapper clearfix">
 		<div class="mod_userlist">
 			<div class="titbar">
 				<span class="titbar-li titbar-on">
-					<span>用户列表</span>
-					<i>(<label>789</label>)</i>
-				</span>
-				<span class="titbar-li">
 					<span>好友列表</span>
 					<i>(<label class="friendnum">0</label>)</i>
 				</span>
@@ -51,150 +59,6 @@
 			</div>
 			<div class="cont">
 					<div class="list_window">
-						<div class="all_list">
-							<ul id="allUsers">
-								<li>
-									<a href="javascript:return false">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="list_window" style="display:none">
 						<div class="all_list">
 							<ul id="allFriends">
 								<div class="addfriendbox">
@@ -207,12 +71,6 @@
 					<div class="list_window" style="display:none">
 						<div class="message-list">
 							<ul class="allMessages">
-								<li>
-									<a href="javascript:return false">
-										<div class="headimg"><img src=""></div>
-										<span>小娜</span>
-									</a>
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -221,7 +79,6 @@
 		<div class="mod_main">
 			<div class="tabnav">
 				<a href="" class="chatroom-btn on">聊天室</a>
-				<a href="" class="notice-btn">公告</a>
 				<a href="" class="friend-btn">好友</a>
 			</div>
 			<div class="tabcont">
@@ -231,7 +88,7 @@
 										<div class="scrollbox" id="scrollChatroom">
 											<div class="dialog">
 												<a href="" class="headimg">
-													<img src="">
+													<img src="img/user.png">
 												</a>
 												<div class="dialog_top">
 													<a href="" class="uname">小林子</a>
@@ -248,40 +105,18 @@
 													</a>
 												</div>
 											</div>
-											<div class="dialog">
+											<div class="dialog mine">
 												<a href="" class="headimg">
-													<img src="">
+													<img src="img/user.png">
 												</a>
 												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
 													<span class="dtime">14:09</span>
+													<a href="" class="uname">ASDF</a>
+													
 												</div>
 												<p>
 													<i></i>
-													<span class="dcon"><img src="static/img/faces/ee_31.png">这是一行很长很长很长的文字用来测试能否换行的,这是一行很长很长很长的文字用来测试能否换行的</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="chat_content" style="display:none">
-										<div class="scrollbox" id="scrollNotice">
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的2</span>
+													<span class="dcon"><img src="static/img/faces/ee_31.png">这是一行很长很长很长</span>
 												</p>
 												<div class="at">
 													<a href="javascript:void(0)">
@@ -313,8 +148,179 @@
 													</a>
 												</div>
 											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog mine">
+												<a href="" class="headimg">
+													<img src="img/user.png">
+												</a>
+												<div class="dialog_top">
+													<span class="dtime">14:09</span>
+													<a href="" class="uname">小林子</a>
+													
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon"><img src="static/img/faces/ee_31.png">这是一行很长很长很长</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="" class="headimg">
+													<img src="">
+												</a>
+												<div class="dialog_top">
+													<a href="" class="uname">小林子</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
 										</div>
-										
 									</div>
 									<div class="scrollbox-friend" style="display:none">
 										与 <span class="scrollbox-friendname">test2</span> 聊天中
@@ -373,8 +379,13 @@
 	        </div>
 	    </div>
     </div>
+    <div class="site-footer">
+		<p class="copyright">&copy; 2016 by NI ChuBiao</p>
+	</div>
+
 <script type="text/javascript" src="static/js/chatroom.js"></script>
 <script type="text/javascript" src="static/js/test.js"></script>
+<script type="text/javascript" src="../js/resume.js"></script>
 
 </body>
 </html>

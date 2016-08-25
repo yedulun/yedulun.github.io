@@ -12,20 +12,24 @@ body{
 a{
 	text-decoration: none;
 }
-.box-header{
-	position: relative;
-	width: 100%;
-	height: 60px;
-	background-color: #4C7FCA;
-}
 
 .wrapper{
 	width: 920px;
 	margin: 0 auto;
+	margin-top: 30px;
+}
+.login{
+	float: right;
+	line-height: 50px;
+}
+.login a{
+	color: #fff;
 }
 .mod_main{
+	position: relative;
 	width: 610px;
 	float: left;
+	z-index: 3;
 }
 .mod_main .tabnav{
 	border-top-left-radius: 3px;
@@ -37,7 +41,7 @@ a{
 }
 .tabnav{
 	height: 40px;
-	background-color: #3157A1;
+	background-color: #3B5B8E;
 }
 .tabnav a{
 	display: inline-block;
@@ -48,16 +52,18 @@ a{
 	font-size: 1pc;
 	padding: 0 5px;
 }
-.tabnav a.on{
+.tabnav a.on, .tabnav a:hover{
 	font-weight: 700;
 	border-bottom: 2px solid #fff;
 }
 .tabcont{
-	background-color: #284b91;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,.2);
 }
 .chat_content .scrollbox{
 	position: relative;
 	padding: 0 20px;
+	width: 540px;
 }
 .chat_content{
 	overflow: hidden;
@@ -77,17 +83,18 @@ a{
 	position: absolute;
 	width: 100%;
 	height: 40px;
-	background-color: rgba(158,189,241,.9);
 	top: 0;
 	left: 0;
 	z-index: 3;
 	text-align: center;
+	font-size: 12px;
 }
 .scrollbox-friendname{
 	line-height: 40px;
 	font-size: 20px;
 	margin: 0 10px;
-	color: #3157A1;
+	color: #C49351;
+	font-weight: 600;
 }
 .dialog{
 	position: relative;
@@ -101,7 +108,6 @@ a{
 	height: 33px;
 	left: 0;
 	top: 0;
-	border: 1px solid #fff;
 	border-radius: 3px;
 }
 .dialog .headimg img{
@@ -112,14 +118,14 @@ a{
 	padding-bottom: 3px;
 }
 .dialog_top a{
-	color: #edbb38;
-	font-size: 14px;
+	color: #1d38bb;
+	font-size: 15px;
 	line-height: 14px;
 }
 .dialog_top .dtime{
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size: 11px;
-	color: #d6d6d6;
+	color: #1d38bb;
 	line-height: 14px;
 }
 .dialog>p{
@@ -177,6 +183,28 @@ a{
 	border-color: transparent transparent #fff;
 	border-style: solid;
 }
+.mine .headimg{
+	left: auto;
+	right: 0;
+}
+.mine .dialog_top{
+	text-align: right;
+}
+.mine .dialog_top .dtime{
+	margin-right: 20px;
+}
+.mine>p i{
+	background-image: url(../../img/img_css.png);
+	left: auto;
+	right: 42px;
+	top: 30px;
+	width: 7px;
+	height: 8px;
+	background-position: -110px -10pc;
+}
+.mine{
+	text-align: right;
+}
 .chat_input{
 	height: 170px;
 	width: 100%;
@@ -216,12 +244,12 @@ a{
 	color: #fff;
 }
 .input_area .ctextarea{
-	background-color: #162652;
+	background-color: rgba(255,255,255,.5);
 	outline: none;
 	border: 0;
 	width: 550px;
 	border-radius: 3px;
-	color: #84878d;
+	color: #34373d;
 	font-size: 15px;
 	margin: 0 auto;
 	padding: 10px;
@@ -264,11 +292,13 @@ a{
 	float: left;
 	position: relative;
 	border-radius: 3px;
-	width: 293px;
+	width: 280px;
+	margin-right: 2px;
 }
 .mod_userlist .titbar{
-	background-color: #3157A1;
+	background-color: #3B5B8E;
 	height: 40px;
+	line-height: 40px;
 	padding: 0 10px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -280,8 +310,13 @@ a{
 	font-size: 14px;
 	font-weight: 400;
 }
+.mod_userlist .titbar span.titbar-li span{
+	display: inline-block;
+	height: 40px;
+	box-sizing: border-box;
+}
 .mod_userlist .titbar span.titbar-li span:hover, .titbar .titbar-on span{
-	font-weight: 500;
+	font-weight: 600;
 	border-bottom: 2px solid #fff;
 }
 .mod_userlist .titbar span.titbar-li i{
@@ -294,17 +329,17 @@ a{
 .mod_userlist .list_window{
 	overflow: hidden;
 	height: 670px;
-	background-color: #264A8F;
+	background-color: rgba(255,255,255,.2);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
 .all_list ul li{
 	list-style-type: none;
-	background-color: #264A8F;
 	border-bottom: 1px solid rgba(1,8,37,.1);
+	padding-left: 5px;
 }
 .all_list ul li:hover{
-	background-color: #234181;
+	background-color: rgba(255,255,255,.4);
 }
 .all_list ul li .headimg{
 	float: left;
@@ -320,7 +355,7 @@ a{
 	height: 33px;
 	line-height: 33px;
 	font-size: 14px;
-	color: #fff;
+	color: #34373d;
 	padding: 7px 0 7px 18px;
 }
 
@@ -328,8 +363,10 @@ a{
 	width: 250px;
 	height: 30px;
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .addfriendbox .addfriendname{
+	color: #34373d;
 	width: 150px;
 	margin-left: 20px;
 	height: 30px;
@@ -337,6 +374,7 @@ a{
 	padding: 0 5px;
 	border: 0;
 	border-radius: 3px;
+	background-color: rgba(255,255,255,.6);
 }
 .addfriendbox .addfriendbtn{
 	cursor: pointer;
@@ -352,8 +390,49 @@ a{
 .addfriendbox .addfriendbtn:hover{
 	background-color: #234181;
 }
-
-
+.allMessages li{
+	list-style-type: none;
+	border-bottom: 1px solid rgba(1,8,37,.1);
+	padding-left: 5px;
+}
+.allMessages li>a{
+	display: block;
+	height: 46px;
+	line-height: 23px;
+	font-size: 14px;
+	color: #34373d;
+	padding: 7px 0 7px 18px;
+	cursor: default;
+}
+.allMessages li:hover{
+	background-color: rgba(255,255,255,.4);
+}
+.allMessages li .req_name{
+	color: #C49351;
+}
+.allMessages li .req_item{
+	font-size: 12px;
+}
+.allMessages li button{
+	width: 50px;
+	height: 20px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	background-color: #C49351;
+	border-radius: 2px;
+	margin-left: 10px;
+}
+.allMessages li button:hover{
+	background-color: #D4A361;
+	cursor: pointer;
+}
+.allMessages .res_accept, .allMessages .res_reject{
+	display: none;
+	font-size: 12px;
+	color: #C49351;
+	margin-left: 10px;
+}
 
 
 
@@ -421,6 +500,13 @@ a{
 .login-btn{
 	margin-left: 110px;
 	margin-right: 50px;
+}
+
+
+body .site-footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
 
 .clearfix:after{
