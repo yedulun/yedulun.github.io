@@ -18,185 +18,28 @@ a{
 	height: 60px;
 	background-color: #4C7FCA;
 }
-.box-header-in{
-	width: 100%;
+
+.wrapper{
+	width: 920px;
 	margin: 0 auto;
-	height: 60px;
 }
-.box-header h1{
-	display: inline-block;
-	float: left;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 300;
-	padding-top: 12px;
-	margin-left: 20px;
-}
-.header-left{
-	float: left;
-	margin-left: 100px;
-}
-.header-left a{
-	display: inline-block;
-	width: 150px;
-	background-color: #C49351;
-	color: #fff;
-	height: 35px;
-	line-height: 35px;
-	text-align: center;
-	font-size: 1pc;
-	border-radius: 3px;
-	margin-top: 15px;
-	margin-right: 20px;
-	box-shadow: 0 1px 1px rgba(21,78,136,.4);
-}
-.header-right{
-	float: right;
-}
-.header-right ul li{
-	list-style-type: none;
-	float: left;
-}
-.header-right li a{
-	display: inline-block;
-	font-size: 1pc;
-	height: 60px;
-	padding: 0 20px;
-	line-height: 60px;
-	text-align: center;
-	color: #fff;
-}
-.header-right .dropcont{
-	display: none;
-}
-.header-right ul li a:hover{
-	background-color: #315999;
-}
-
-
-.mod-menu{
-	position: fixed;
-	right: 5px;
-	top: 65px;
-	bottom: 5px;
-	width: 74px;
-	background-color: rgba(39,75,147,1);
-	border-radius: 3px;
-	z-index: 2;
-}
-
-.mod-menu ul li{
-	list-style-type: none;
-	border-bottom: 1px solid rgba(4,16,47,.3);
-}
-.mod-menu ul li:hover{
-	background-color: #3E67B3;
-}
-.mod-menu ul li>a{
-	display: block;
-	height: 60px;
-	font-size: 12px;
-	color: #fff;
-	text-align: center;
-	line-height: 60px;
-}
-/***
-.wrapper{
-	padding-right: 84px;
-	margin-top: 5px;
-}
-.right_row{
-	width: 263px;
-	height: 500px;
-	background-color: #ccc;
-	float: right;
-}
-.left_row{
-	width: 100%;
-	height: 100px;
-	float: left;
-}
-.clearfix:after{
-	content: "";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-***/
-
-.wrapper{
-	width: auto;
-	padding: 0 84px 0 5px;
-	margin-top: 5px;
-	border-right: 0;
-}
-.left_row .left_cont{
-	margin-right: 298px;
-	height: 100%;
-}
-.left_cont .left1{
-	width: 100%;
-	height: 100%;
-	float: left;
-
-}
-.left_row .left_cont .left2{
-	float: right;
+.mod_main{
 	width: 610px;
-	height: 100%;
-	margin-left: -620px;
+	float: left;
 }
-.left1-content{
-	position: relative;
-	height: 100%;
-	background-color: #333;
-	margin-right: 615px;
-}
-.left1-content .videobox{
-	height: 50%;
-}
-.video-notice{
-	height: 100%;
-	width: 100%;
-}
-.livevideoshow{
-	height: 100%;
-	width: 100%;
-}
-.livevideoshow embed{
-	width: 100%;
-	height: 100%;
-}
-.left1-content .videolist{
-	height: 323px;
-	background-color: #284B91;
-}
-
-
-.left2 .mod_banner{
-	width: 610px;
-	height: 120px;
-	margin-bottom: 5px;
-}
-.left2 .mod_banner img{
-	width: 100%;
-	height: 100%;
-	border-radius: 3px;
-}
-.left2 .mod_main .tabnav{
+.mod_main .tabnav{
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
-.left2 .mod_main .tabcont{
+.mod_main .tabcont{
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
-.left2 .tabnav{
+.tabnav{
 	height: 40px;
 	background-color: #3157A1;
 }
-.left2 .tabnav a{
+.tabnav a{
 	display: inline-block;
 	margin: 0 26px;
 	color: #fff;
@@ -205,11 +48,11 @@ a{
 	font-size: 1pc;
 	padding: 0 5px;
 }
-.left2 .tabnav a.on{
+.tabnav a.on{
 	font-weight: 700;
 	border-bottom: 2px solid #fff;
 }
-.left2 .tabcont{
+.tabcont{
 	background-color: #284b91;
 }
 .chat_content .scrollbox{
@@ -225,6 +68,7 @@ a{
 }
 .chat_content_window{
 	position: relative;
+	height: 500px;
 }
 .chat_content_friend{
 	padding-top: 40px;
@@ -415,73 +259,12 @@ a{
 
 
 
-.right_row{
-	width: 293px;
-	height: 100%;
-	margin-left: -298px;
-	float: right;
-	position: relative;
-}
-.left_row{
-	float: left;
-	width: 100%;
-	height: 100%;
-	background-color: #ccc;
-}
-.mod_room{
-	height: 120px;
-	background-color: #22448A;
-	margin-bottom: 5px;
-	border-radius: 3px;
-}
-.mod_room .titbar{
-	height: 40px;
-	background-color: #3157A1;
-	padding-left: 5px;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-}
-.room_name{
-	float: left;
-	color: #fff;
-	line-height: 40px;
-	font-size: 1pc;
-	font-weight: 700;
-}
-.changeroom{
-	display: inline-block;
-	height: 40px;
-	float: right;
-	position: relative;
-}
-.changeroom a{
-	display: inline-block;
-	line-height: 40px;
-	color: #fff;
-	font-size: 14px;
-	padding: 0 10px;
-}
-.changeroom:hover{
-	background-color: #3E67B3;
-}
-.room_info{
-	padding: 15px 10px 0;
-	vertical-align: justify;
-}
-.room_info .tit{
-	display: inline-block;
-	padding: 0 6px;
-	color: #E2E2E2;
-	font-size: 14px;
-	line-height: 20px;
-	background: rgba(58,103,166,.5);
-	margin-bottom: 5px;
-}
-.room_info p{
-	color: #E2E2E2;
-}
+
 .mod_userlist{
+	float: left;
+	position: relative;
 	border-radius: 3px;
+	width: 293px;
 }
 .mod_userlist .titbar{
 	background-color: #3157A1;
@@ -510,7 +293,7 @@ a{
 }
 .mod_userlist .list_window{
 	overflow: hidden;
-	height: 100%;
+	height: 670px;
 	background-color: #264A8F;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -638,4 +421,12 @@ a{
 .login-btn{
 	margin-left: 110px;
 	margin-right: 50px;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
 }

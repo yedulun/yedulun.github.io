@@ -1,8 +1,7 @@
 $(function(){
 
 	//adjust some elements' height to avoid scrollbar when browser's size change
-	adjustH();
-	$(window).resize(adjustH);
+	
 
 
 
@@ -107,23 +106,4 @@ $(function(){
 
 
 })
-
-
-//adjust some elements' height to fit the browser's height, avoid scrollbar
-function adjustH(){
-	var totalHeight = document.documentElement.clientHeight;
-	var $cont = $(".cont");
-	var offsetT = $cont.offset().top;
-	var contHeight = totalHeight - offsetT - 5 + "px";
-	$(".cont").css("height", contHeight);
-	var wrapperHeight = totalHeight - 70 + "px";
-	$(".wrapper").css("height", wrapperHeight);
-	var contentOffsetT = $(".chat_content_window").offset().top;
-	var contentH = totalHeight - contentOffsetT - 175 + "px";
-	$(".chat_content_window").css("height", contentH);
-
-	var videoH = totalHeight - $(".videobox").offset().top - 328 + "px";
-	$(".videobox").css("height", videoH);
-}
-
 
