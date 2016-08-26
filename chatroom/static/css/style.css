@@ -289,7 +289,22 @@ a{
 	color: #4975ac;
 
 }
-
+.emotionIcont{
+	display: inline-block;
+	background-image: url(../../img/img_css.png);
+	background-position: 0 -110px;
+	width: 21px;
+	height: 21px;
+	margin-left: 15px;
+}
+.pictureIcont{
+	display: inline-block;
+	background-image: url(../../img/img_css.png);
+	background-position: -75pt -300px;
+	width: 21px;
+	height: 21px;
+	margin-left: 15px;
+}
 
 
 

@@ -49,6 +49,15 @@ $(function(){
 			return false;
 		})
 
+		//$("#picturebtn").bind("click", inputFile);
+
+		//$("#fileInput").on("change", sendPicture);
+
+
+		function inputFile(){
+			$("#fileInput").val("").click();
+		}
+
 
 		function login(){
 			username = $("#username").val();
@@ -145,6 +154,9 @@ $(function(){
 			onEmotionMessage: function(message){
 				handleEmotionMessage(message);
 			},
+			onPictureMessage: function(message){
+				//handlePictureMessage(message);
+			},
 			onPresence: function(message){
 				console.log(message);
 				handlePresence(message);
@@ -233,6 +245,12 @@ $(function(){
 
 			conn.sendTextMessage(options);
 		};
+
+		
+
+
+
+
 
 		var handlePresence = function(e){
 			if (e.type == 'subscribe') {
@@ -325,6 +343,46 @@ $(function(){
 			$(".face-box").hide();
 			po_Last_Div("inputArea");
 		};
+
+
+		var handlePictureMessage = function(message){
+			var filename = message.filename;
+			var from = message.from;
+			var ext = message.ext;
+			var mestype = message.type;
+			var options = message;
+			options.onFileDownloadComplete = function(response, xhr){
+				var objectURL = window.URL.createObjectURL(response);
+				img = document.createElement("img");
+				img.onload = function(e) {
+					img.onload = null;
+					window.URL.revokeObjectURL(img.src);
+				};
+				img.onerror = function() {
+					img.onerror = null;
+					if (typeof FileReader == 'undefined') {
+						img.alter = "当前浏览器不支持blob方式";
+						return;
+					}
+					img.onerror = function() {
+						img.alter = "当前浏览器不支持blob方式";
+					};
+					var reader = new FileReader();
+					reader.onload = function(event) {
+						img.src = this.result;
+					};
+					reader.readAsDataURL(response);
+				}
+				img.src = objectURL;
+				console.log(img);
+				$("body").append(img);
+			};
+			options.onFileDownloadError = function(){
+				alert("error");
+			}
+			Easemob.im.Helper.download(options);
+		}
+
 
 
 		//将可编辑div光标移至最后

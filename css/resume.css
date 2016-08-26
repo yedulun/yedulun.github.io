@@ -178,6 +178,25 @@ a{
   margin-bottom: 5px;
   font-size: 16px;
 }
+.content-home .chatRoom{
+  margin-right: 30px;
+}
+.content-home .chatRoom, .content-home .miPhone{
+  display: inline-block;
+  font-family: "Microsoft yahei";
+  width: 130px;
+  height: 40px;
+  background-color: #207D59;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 3px;
+}
+.content-home .chatRoom:hover, .content-home .miPhone:hover{
+  background-color: #308D69;
+}
 
 /*------------------------------内容区 资料------------------------------*/
 .content-user{
@@ -332,6 +351,9 @@ a{
   padding: 0 5px;
   border: 1px solid #acacac;
   border-radius: 2px;
+}
+.summary .other li:last-child{
+  margin-right: 0;
 }
 
 /*------------------------------内容区 相册------------------------------*/
