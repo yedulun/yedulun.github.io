@@ -41,6 +41,8 @@
 				<li title="微博"><a href="http://weibo.com/1703720461/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1"><i class="fa fa-weibo fa-lg"></i></a></li>
 				<li title="Github"><a href="https://github.com/yedulun"><i class="fa fa-github-square fa-lg"></i></a></li>
 				<span class="login"><a href="" class="header-login">登录</a></span>
+				<span class="register"><a href="" class="header-register">注册</a></span>
+				<span class="login_item">abby</span>
 			</ul>
 		</div>
 	</div>
@@ -53,8 +55,7 @@
 					<i>(<label class="friendnum">0</label>)</i>
 				</span>
 				<span class="titbar-li">
-					<span>消息通知</span>
-					<i>(<label>0</label>)</i>
+					<span>消息通知<sup class="message-reddot">0</sup></span>
 				</span>
 			</div>
 			<div class="cont">
@@ -87,16 +88,35 @@
 									<div class="chat_content" style="display:block">
 										<div class="scrollbox" id="scrollChatroom">
 											<div class="dialog">
-												<a href="" class="headimg">
+												<a href="javascript:void(0);" class="headimg">
 													<img src="img/user.png">
 												</a>
 												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
+													<a href="javascript:void(0);" class="uname">友情提示</a>
 													<span class="dtime">14:09</span>
 												</div>
 												<p>
 													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的,这是一行很长很长很长的文字用来测试能否换行的</span>
+													<span class="dcon">点击右上角的登录按钮进行注册或者登录</span>
+												</p>
+												<div class="at">
+													<a href="javascript:void(0)">
+														<b></b>
+														<span>@Ta</span>
+													</a>
+												</div>
+											</div>
+											<div class="dialog">
+												<a href="javascript:void(0);" class="headimg">
+													<img src="img/user.png">
+												</a>
+												<div class="dialog_top">
+													<a href="javascript:void(0);" class="uname">友情提示</a>
+													<span class="dtime">14:09</span>
+												</div>
+												<p>
+													<i></i>
+													<span class="dcon">已注册的用户之间可以相互加为好友后进行一对一聊天，也可以在聊天室和其他同在聊天室的用户聊天</span>
 												</p>
 												<div class="at">
 													<a href="javascript:void(0)">
@@ -106,12 +126,12 @@
 												</div>
 											</div>
 											<div class="dialog mine">
-												<a href="" class="headimg">
+												<a href="javascript:void(0);" class="headimg">
 													<img src="img/user.png">
 												</a>
 												<div class="dialog_top">
 													<span class="dtime">14:09</span>
-													<a href="" class="uname">ASDF</a>
+													<a href="javascript:void(0);" class="uname">ASDF</a>
 													
 												</div>
 												<p>
@@ -129,201 +149,10 @@
 									</div>
 									<div class="chat_content chat_content_friend" style="display:none">
 										<div class="scrollbox" id="scrollFriend">
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog mine">
-												<a href="" class="headimg">
-													<img src="img/user.png">
-												</a>
-												<div class="dialog_top">
-													<span class="dtime">14:09</span>
-													<a href="" class="uname">小林子</a>
-													
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon"><img src="static/img/faces/ee_31.png">这是一行很长很长很长</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
-											<div class="dialog">
-												<a href="" class="headimg">
-													<img src="">
-												</a>
-												<div class="dialog_top">
-													<a href="" class="uname">小林子</a>
-													<span class="dtime">14:09</span>
-												</div>
-												<p>
-													<i></i>
-													<span class="dcon">这是一行很长很长很长的文字用来测试能否换行的3</span>
-												</p>
-												<div class="at">
-													<a href="javascript:void(0)">
-														<b></b>
-														<span>@Ta</span>
-													</a>
-												</div>
-											</div>
 										</div>
 									</div>
 									<div class="scrollbox-friend" style="display:none">
-										与 <span class="scrollbox-friendname">test2</span> 聊天中
+										与 <span class="scrollbox-friendname"></span> 聊天中
 									</div>
 								</div>
 								<div class="chat_input">
@@ -361,6 +190,7 @@
 	        <div class="login-header">
 	            <h3>用户登录</h3>
 	        </div>
+	        <p class="login-notice green">注册成功</p>
 	        <div class="login-body">
 	            <table>
 	                <tr>
@@ -375,7 +205,29 @@
 	        </div>
 	        <div class="login-footer">
 	            <button class="login-btn" tabindex="3">登录</button>
-	            <button class="reg-btn" tabindex="4">注册</button>
+	        </div>
+	    </div>
+    </div>
+    <div id="registerBox" class="login-box-wrapper" >
+		<div class="login-box">
+	        <div class="login-header">
+	            <h3>用户注册</h3>
+	        </div>
+	        <p class="reg-notice green">注册成功</p>
+	        <div class="login-body">
+	            <table>
+	                <tr>
+	                    <td>
+	                        <label class="username">用户名:</label>
+	                        <input type="text" name="username" value="" id="username2" tabindex="1"/>
+	                        <label class="password">密码:</label>
+	                        <input type="password" name="password" value="" id="password2" tabindex="2" />
+	                    </td>
+	                </tr>
+	            </table>    
+	        </div>
+	        <div class="login-footer">
+	            <button class="register-btn" tabindex="3">注册</button>
 	        </div>
 	    </div>
     </div>

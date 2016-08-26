@@ -7,13 +7,13 @@ $(function(){
 
 	//scrollbar style use
 	$(".list_window").mCustomScrollbar({
-		scrollInertia: 200
+		scrollInertia: 100
 	});
 	$(".chat_content").mCustomScrollbar({
-		scrollInertia: 200
+		scrollInertia: 100
 	});
 
-	
+
 
 
 	//click tabnav btn chatroom, notice, friend
@@ -22,7 +22,9 @@ $(function(){
 		$(this).addClass("on");
 		var index = $(this).index();
 		$(".chat_content_window > div").css("display", "none");
+
 		$(".chat_content_window > div").eq(index).css("display", "block");
+		$(".chat_content_window > div").eq(index).mCustomScrollbar("scrollTo","bottom");
 		if (index==0) {
 			tofriend ="132598658687304132";
 		}
@@ -52,7 +54,7 @@ $(function(){
 		return false;
 	})
 
-
+/**
 	//show or hide @Ta div when click user's img
 	$(".scrollbox").on("click", ".headimg", function(){
 		if($(this).siblings().filter(".at").is(":visible")){
@@ -93,7 +95,7 @@ $(function(){
 		var atNameE = $("<span contenteditable='false'>@<label>" + atName + "</label></span>");
 		$("#inputArea").append(atNameE);
 	})
-
+**/
 	//click user list, friend list, message 
 	$(".titbar-li span").bind("click", function(){
 		var index = $(this).parent().index();

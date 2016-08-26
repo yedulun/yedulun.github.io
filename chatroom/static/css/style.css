@@ -18,13 +18,23 @@ a{
 	margin: 0 auto;
 	margin-top: 30px;
 }
-.login{
+.login, .register{
+	display: block;
 	float: right;
 	line-height: 50px;
+	margin-left: 15px;
 }
-.login a{
+.login a, .register a{
 	color: #fff;
 }
+
+.login_item{
+	display: none;
+	float: right;
+	line-height: 50px;
+	color: #fff;
+}
+
 .mod_main{
 	position: relative;
 	width: 610px;
@@ -309,6 +319,7 @@ a{
 	line-height: 40px;
 	font-size: 14px;
 	font-weight: 400;
+	position: relative;
 }
 .mod_userlist .titbar span.titbar-li span{
 	display: inline-block;
@@ -483,8 +494,11 @@ a{
 }
 .login-footer{
 	margin-top: 20px;
+	position: relative;
 }
 .login-footer button{
+	position: absolute;
+	left: 170px;
 	width: 60px;
 	height: 30px;
 	background-color: #4F94CF;
@@ -497,11 +511,22 @@ a{
 .login-footer button:hover{
 	background-color: #519DDE;
 }
-.login-btn{
-	margin-left: 110px;
-	margin-right: 50px;
-}
 
+.reg-notice, .login-notice{
+	position: absolute;
+	display: none;
+	width: 250px;
+	margin-left: 75px;
+	margin-top: 5px;
+	color: #fff;
+	text-align: center;
+}
+.reg-notice.green, .login-notice.green{
+	background-color: green;
+}
+.reg-notice.red, .login-notice.red{
+	background-color: red;
+}
 
 body .site-footer{
 	position: fixed;
@@ -515,4 +540,17 @@ body .site-footer{
 	height: 0;
 	visibility: hidden;
 	clear: both;
+}
+
+.message-reddot{
+	display: inline-block;
+	position: absolute;
+	background-color: #da4454;
+	height: 15px;
+	line-height: 14px;
+	padding: 0 3px;
+	border-radius: 8px;
+	top: -5px;
+	left: 60px;
+	display: none;
 }
