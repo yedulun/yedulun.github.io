@@ -178,10 +178,10 @@ a{
   margin-bottom: 5px;
   font-size: 16px;
 }
-.content-home .chatRoom{
+.content-home .chatRoom, .content-home .miPhone{
   margin-right: 30px;
 }
-.content-home .chatRoom, .content-home .miPhone{
+.content-home .chatRoom, .content-home .miPhone, .content-home .backstage{
   display: inline-block;
   font-family: "Microsoft yahei";
   width: 130px;
@@ -194,7 +194,7 @@ a{
   line-height: 40px;
   border-radius: 3px;
 }
-.content-home .chatRoom:hover, .content-home .miPhone:hover{
+.content-home .chatRoom:hover, .content-home .miPhone:hover, .content-home .backstage:hover{
   background-color: #308D69;
 }
 

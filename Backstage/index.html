@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>数据统计</title>
+	<link rel="stylesheet" href="static/css/style.css" media="all" />
+<!--[if IE]><link rel="stylesheet" href="static/css/ie.css" media="all" /><![endif]-->
+	<script src="static/js/Chart.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="static/font/iconfont.css" />
+	<style>
+		.buttons>span.button:hover{
+			background-color: #e53b3b;
+		}
+	</style>
+</head>
+<body>
+
+<!-- 顶部用户信息栏 start -->
+<div class="testing">
+<section class="user">
+	<div class="profile-img">
+		<p><img src="static/img/logo.png" alt="" height="40" width="40" style="background:#fff;" /> 欢迎回来, 善为互联</p>
+	</div>
+	<div class="buttons">
+		<button class="ico-font">&#9206;</button>
+		<a href="login.html" class="button red">安全退出</a>
+	</div>
+</section>
+</div>
+<!-- 顶部用户信息栏 end -->
+
+<!-- 左边目录栏 start -->
+<nav>
+	<ul>
+		<li class="section">
+			<a href="index.html"><span class="icon">&#128202;</span> 数据报表</a>
+		</li>
+		<li>
+			<a href="memberList_user.html"><span class="icon">&#128100;</span>用户管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="memberList_promotMembers.html">代言列表</a></li>
+				<li><a href="memberList_lostPartner.html">普通用户</a></li>
+			</ul>	
+		</li>
+		<li>
+			<a href="productManage.html"><span class="icon">&#128230;</span> 商品管理</a>
+			<ul class="submenu">
+				<li><a href="productEdit.html">商品上架</a></li>
+				<li><a href="productPutaway.html">已上架商品</a></li>
+				<li><a href="productSold_out.html">已下架商品</a></li>
+				<li><a href="productNotputaway.html">未上架商品</a></li>
+				<li><a href="productRepertory.html">库存不足商品</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="orderManage_shippedOrder.html"><span class="icon">&#128196;</span> 订单管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="orderManage_nonPayOrders.html">待支付</a></li>
+				<li><a href="orderManage_notShippedOrders.html">待发货</a></li>
+				<li><a href="orderManage_allOrders.html">待签收</a></li>
+				<li><a href="orderManag_confirmOrders.html">已发货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货处理</a></li>
+			</ul>	
+		</li>
+		<li>
+			<a href="logisticsManage.html"><span class="icon">&#128273;</span> 物流管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="logisticsShipments.html">发货</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="wm_applyRecords.html"><span class="icon">&#128273;</span> 财富管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="wm_balance.html">账号余额</a></li>
+				<li><a href="wm_commercialDetail.html">商户提现</a></li>
+				<li><a href="wm_incomeDetail.html">收支明细</a></li>
+				<li><a href="wm_endorseDetail.html">代言人提现</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="salesPromotion.html"><span class="icon">&#127942;</span> 促销活动</a>
+			<ul class="submenu">
+				<li><a href="salesPromotionTemplate.html">模板</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="storeManage_modifyInfo.html"><span class="icon">&#127942;</span> 店铺信息</a>
+			<ul class="submenu">
+				<li><a href="storeAddphone.html">更换手机号</a></li>
+				<li><a href="storeManage_modifyPwd.html">修改密码</a></li>
+				<li><a href="incentiveRules.html">奖励规则</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="businessManage_commercial.html"><span class="icon">&#128101;</span> 商户管理</a>
+			<ul class="submenu">
+				<li><a href="businessManage_new.html">新增商户</a></li>
+				<li><a href="businessManage_termination.html">已解约商户</a></li>
+				<li><a href="businessManage_pastDue.html">已过期商户</a></li>
+				<li><a href="businessManage_freeze.html">已冻结商户</a></li>
+				<li><a href="businessManage_checkAll.html">商户通用设置</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="busin_messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="busin_messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- 左边目录栏 end -->
+
+<!-- 数据报表内容 start -->
+<section class="content content-box">
+
+	<!-- 营业额收入统计图 start -->
+	<section class="widget">
+		<header>
+			<span class="icon">&#128200;</span>
+			<hgroup>
+				<h1>数据统计图</h1>
+			</hgroup>
+
+		</header>
+
+		<div class="content ">
+			<div style="margin:10px 20px;;">
+				<span>(元)</span>
+				<div class="data-btn" style="float:right; margin-top:-20px;">
+					<button class="btnDay">年</button>
+					<button class="btnDay" style=" margin-left:-5px;">月</button>
+					<button class="btnDay" style=" margin-left:-5px;">日</button>
+				</div>
+			</div>
+			<canvas id="cv" style="width:100%; height:460px;"></canvas>
+
+		</div>
+		</div>
+	</section>
+	<!-- 营业额收入统计图 end -->
+	
+	<!-- 数据统计 start -->
+	<div class="widget-container">
+		<section class="widget small">
+			<header> 
+				<span class="icon">&#128318;</span>
+				<hgroup>
+					<h1>业务数据</h1>
+
+				</hgroup>
+			</header>
+			<div class="content" style="position:relative;">
+				<section class="stats-wrapper">
+					<div class="stats">
+						<p><span>64</span></p>
+						<p>今日订单</p>
+					</div>
+					<div class="stats">
+						<p><span>362</span></p>
+						<p>交易额</p>
+					</div>
+				</section>
+				<section class="stats-wrapper">
+					<div class="stats">
+						<p><span>7</span></p>
+						<p>今日代言人</p>
+					</div>
+					<div class="stats">
+						<p><span>927</span></p>
+						<p>今日申请提款</p>
+					</div>
+				</section>
+				<a href=""><i class="icon iconfont set" style="position:absolute; bottom:20px;right:20px;font-size:18px;;">&#xe624;</i></a>
+			</div>
+		</section>
+		<!-- 数据统计 end -->
+
+		<!-- 饼图统计 start -->
+		<section class="widget small">
+			<header> 
+				<span class="icon">&#9716;</span>
+				<hgroup>
+					<h1>用户年龄结构</h1>
+				</hgroup>
+			</header>
+			<div class="content"  style="position:relative;">
+				<div class="statiTable">
+					<div>
+						<div style="width:30px; height:20px; background-color:#FD4E67;margin:5px; float:left;" class="left"></div><sapn style="float:left; line-height:30px;">19岁以下</sapn>
+					</div>
+					<div>
+						<div style="width:30px; height:20px; background-color:#FEED6A;margin:5px; float:left;" class="left"></div><sapn style="float:left; line-height:30px;">19～29岁</sapn>
+					</div>
+					<div>
+						<div style="width:30px; height:20px; background-color:#575FFC;margin:5px; float:left;" class="left"></div><sapn style="float:left; line-height:30px; ">29岁以上</sapn>
+					</div>
+				</div>
+				<canvas id="cv1"></canvas>
+				<a href=""><i class="icon iconfont set fontSet">&#xe624;</i></a>
+			</div>
+		</section>
+		<!-- 饼图统计 end -->
+
+
+	</div>
+</section>
+<!-- 数据报表内容 end -->
+
+<!-- 数据展示标签 start -->
+
+<section class="content bg-dataDis">
+	<div class="content masking-box"></div>
+	<div class="dataDis">
+		<h1>数据展示标签</h1>
+		<ul>
+			<li class="blue"><a href="">今日订单</a></li>
+			<li class="blue"><a href="">今日交易额</a></li>
+			<li class="blue"><a href="">今日加入代言人</a></li>
+			<li class="blue"><a href="">代言人总数</a></li>
+			<li class="gray"><a href="">浏览量</a></li>
+			<li class="gray"><a href="">月销售订单</a></li>
+			<li class="gray"><a href="">月销售额</a></li>
+			<li class="gray"><a href="">日销售额</a></li>
+		</ul>
+		<p class="left">*默认为四项</p>
+		<div class="clear"></div>
+			<button class="blue" style="margin-left:50px;">确认</button>
+			<button class="red">取消</button>
+
+	</div>
+	</section>
+<section class="content bg-chanData">
+	<div class="content masking-box"></div>
+	<div class="dataDis">
+		<h1>增加数据显示</h1>
+		<select>选择
+			<option value="">年龄</option>
+			<option value="">性别</option>
+			<option value="">身高</option>
+		</select>
+		<table class="chanData-table">
+			<tr>
+				<td><span class="right">设置组数:</span></td>
+				<td><input type="text" class="left"/>(组)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><span class="right">年龄:</span></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><i style="color:red; font-size:20px; vertical-align: middle;">*</i>最多只能设置六组</td>
+				<td></td>
+			</tr>
+		</table>
+		<div class="clear"></div>
+		<button class="blue" style="margin-left:50px;">确认</button>
+		<button class="red">取消</button>
+
+	</div>
+</section>
+
+
+<!-- js start -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.wysiwyg.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="statijs/cycle.js"></script>
+<script src="static/js/jquery.checkbox.min.js"></script>
+<script src="static/js/flot.js"></script>
+<script src="static/js/flot-time.js"></script>
+<script src="static/js/flot-pie.js"></script>
+<script src="static/js/flot-graphs.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// 左右切换图表
+$('.cycle').cycle({
+	fx: "scrollHorz",
+	timeout: 0,
+    slideResize: 0,
+    prev:    '.left-btn', 
+    next:    '.right-btn'
+});
+</script>
+
+<script>
+	//线状图
+	var t = document.getElementById("cv");
+	var ctx = t.getContext("2d");
+	var dt ={
+		labels:["6-1","6-2","6-3","6-4","6-5","6-6","6-7","6-8","6-9","6-10","6-11","6-12","6-13","6-14","6-15","6-16","6-17","6-18","6-19","6-20","6-21","6-22","6-23","6-24","6-25","6-26","6-27","6-28","6-29","6-30"],
+		datasets:[
+			{
+				data:[8000,8100,8200,8300,8400,8500,8600,8700,8800,8700,8800,8900,9000,9100,9200,9300,9400,9500,9600,9700,9800,9900,10000,10100,10200,10300,10400,10500,10600,10700],
+				fillColor:"rgba(0,0,0,0)",
+				strokeColor:"rgba(255,0,0,0.4)",
+				pointColor:"rgba(255,255,255,1)"
+			},
+			/*{
+				data:[7000,7100,7200,7300,7400,7500,7600,7700,7800,7900,8000,8100,8200,8300,8400,8500,8600,8700,8800,8700,8800,8900,9000,9100,9200,9300,9400,9500,9600,9700],
+				fillColor:"rgba(0,0,0,0)",
+				strokeColor:"rgba(0,255,0,0.4)",
+				pointColor:"rgba(255,255,255,1)"
+			},
+			{
+				data:[6000,6100,6200,6300,6400,6500,6600,6700,6800,6900,7000,7100,7200,7300,7400,7500,7600,7700,7800,7900,8000,8100,8200,8300,8400,8500,8600,8700,8800,8700],
+				fillColor:"rgba(0,0,0,0)",
+				strokeColor:"rgba(255,204,0,0.4)",
+				pointColor:"rgba(255,255,255,1)"
+			}*/
+		]
+	}
+	var op ={}
+	new Chart(ctx).Line(dt,op);
+
+	var op1={  datasetFill:false}
+	new Chart(ctx).Line(dt,op)//数据 配置
+
+	//饼状图
+	var t1=document.getElementById("cv1")
+	var ctx1=t1.getContext('2d')
+	var dt1=[
+		{value:30,color:"rgba(253,78,103,1)"},
+		{value:50,color:"rgba(87,95,252,1)"},
+		{value:40,color:"rgba(254,237,106,1)"}
+	]//此处的data数据相当于 datasets[{},{}]
+	var op1={ segmentShowStroke:true,segmentStrokeColor:"rgba(255,255,255,1)",segmentStrokeWidth:5}
+	new Chart(ctx1).Pie(dt1,op1)
+</script>
+<!-- js end -->
+
+</body>
+</html>

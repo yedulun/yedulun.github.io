@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>忘记密码</title>
+<link type="text/css" rel="stylesheet" href="static/css/common.css" />
+<script type="text/jscript" src="static/js/common.js"></script>
+</head>
+
+<body bgcolor="#1BA9B9">
+	<div class="preContainer">
+		<img class="logoImg" src="static/img/logo.png" />
+		<h1>善分销后台管理系统</h1>
+		<form method="" action=" ">
+			<table class="forgetPwdTable" cellpadding="0" cellspacing="0">
+				<tr>
+					<td><label>注册手机:</label></td>
+					<td colspan="2"><input class="input_nl" type="text" value="请输入注册手机号" /></td>
+					<td><a class="rpNumTableA" href="replacePhoneNum.html">更换手机号</a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input class="input_ns" type="text" value="输入验证码"  onfocus="if(value=='输入验证码') {value=''}" onblur="if (value=='') {value='输入验证码'}"/>
+					</td>
+					<td><input type="button" value="获取验证码" class="red codeBtn" onclick="goNum(this)"/></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label>新密码:</label></td>
+					<td colspan="3"><input class="input_nl" type="text" value="请输入新密码" /></td>
+				</tr>
+				<tr>
+					<td><label>确认密码:</label></td>
+					<td colspan="3"><input class="input_nl" type="text" value="请再次输入新密码" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="2"><button class="insetBtn" type="button">提交</button></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

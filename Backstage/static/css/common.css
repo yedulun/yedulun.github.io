@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	基本 css
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+body, button, input {
+	font-family: "苹方";
+	font-size: 62.5%;
+}
+input {
+	border:none;
+	outline:none;
+}
+button {
+	cursor:pointer;
+}
+h1 {
+	font-size: 3.2em;
+}
+a, a:hover, a:link, a:visited {
+	font-family: "苹方";
+	text-decoration: none;
+}
+/*** 使用font-face声明字体 ***/
+@font-face {font-family: 'iconfont';
+	src: url('../_40font-face/iconfont.eot'); /* IE9*/
+	src: url('../_40font-face/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../_40font-face/iconfont.woff') format('woff'), /* chrome、firefox */
+	url('../_40font-face/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../_40font-face/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	登录、注册、忘记密码、更换手机号界面共用
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+input.input_log, input.input_nl, input.input_ns, input.input_s, input.input_reg_ns {
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #999;
+	padding-left: 10px;
+}
+/* 登录表单输入框 css */
+input.input_log {
+	width: 300px;
+}
+.padding{
+	padding-right:38px;
+}
+/* 忘记密码、更换手机号、修改密码界面共用 长输入框 css */
+input.input_nl {
+	width: 275px;
+}
+/* 忘记密码、更换手机号、修改密码界面共用 短输入框 css */
+input.input_ns {
+	width: 120px;
+}
+/* 短输入框 css */
+input.input_s {
+	width: 320px;
+}
+/* 注册的输入验证码按钮 */
+input.input_reg_ns {
+	width:190px;
+	margin-right:31px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	登录页面 css
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 登录界面容器 */
+.logContainer {
+	width: 660px;
+	height: inherit;
+	margin-top: 10%;
+	text-align: center;
+	color: #fff;
+}
+/* 登录页面 */
+.logContainer .table-tainer{
+	width: 422px;
+	height: inherit;
+	margin-left:16%;
+	text-align: center;
+	color: #fff;
+}
+.input-box input{
+	width:242px;
+}
+.input-box{
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #999;
+	padding-left: 10px;
+	background-color:#fff;
+}
+/* 更改密码 */
+#change-password{
+	display:none;
+	width: 560px;
+	height: inherit;
+	margin-top: 10%;
+	margin-left:-1%;
+	text-align: center;
+	color: #fff;
+}
+/* 更换手机 */
+#change-phone{
+	display:none;
+	width: 530px;
+	height: inherit;
+	margin-top: 10%;
+	margin-left:4%;
+	text-align: center;
+	color: #fff;
+}
+/* 登录界面的logo大小 */
+img.logoImg {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 30px;
+}
+/* 长输入框的边距 */
+input.input_m {
+	/*margin-top: 20px;*/
+	margin-bottom: 8px;
+}
+/* 记住密码和忘记密码*/
+span.rNum, span.fNum {
+	width: 47%;
+	float: left;
+	margin-top: 10px;
+}
+span.rNum {
+	text-align: left;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+span.rNum input {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+span.rNum label {
+	font-size: 14px;
+	vertical-align: middle;
+}
+span.fNum {
+	text-align: right;
+}
+span.fNum a {
+	font-size: 14px;
+	color: #fff;
+}
+/* 登入按钮 */
+button.logBtn {
+	width: 100%;
+	height: 40px;
+	font-size: 1.6em;
+	cursor: pointer;
+}
+.gray{
+	background-color:#A1A1A1;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+}
+/* 红色按钮 css */
+.red {
+	color: #fff;
+	background: #FF6666;
+	border: none;
+	border-radius: 5px;
+}
+/* 技术支持 */
+a.proA {
+	font-size: 1.4em;
+	color: #fff;
+	line-height: 50px;
+}
+
+/************* wan *************/
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.logoTable{
+	width:100%;
+}
+.register{
+	margin-left:-3%;
+}
+.logoTable td{
+	padding:10px 10px;
+	line-height:40px;
+}
+.logoTable td.right{
+	font-size:18px;
+}
+.logoTable td>a{
+	color:#E4E4E4;
+}
+.logContainer>h1{
+	margin-bottom:30px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	忘记密码和更改手机号页面的共用css
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 容器 */
+.preContainer {
+	width:420px;
+	height:inherit;
+	margin-top: 10%;
+	text-align: center;
+	color: #fff;
+}
+/* 验证码按钮 */
+input.codeBtn {
+	width:95px;
+	height:40px;
+	font-size:1.6em;
+	text-align:center;
+	cursor:pointer;
+	margin-right:-15px;
+}
+/* 表单 */
+.preContainer table {
+	width:110%;
+	border:none;
+	margin-left:-24px;
+}
+.preContainer table tr {
+	height:60px;
+}
+.preContainer table tr td {
+	text-align:left;
+}
+.preContainer table tr td label {
+	font-size:1.7em;
+	margin-right:10px;
+}
+.preContainer table tr td a {
+	color:#fff;
+	opacity:0.5;
+}
+
+/* 提交或确认更换按钮 */
+.insetBtn {
+	width:286px;
+	height:40px;
+	background:#FF6666;
+	border:none;
+	color:#fff;
+	font-size:1.6em;
+	border-radius:5px;
+	outline:none;
+}
+table.rpNumTable tr td:nth-child(2) {
+	width:155px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	兼容mobile处理
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	忘记密码和更改手机号页面的共用css
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 容器 */
+.preContainer {
+	width:90%;
+}
+/* 表单 */
+.preContainer table {
+	width:110%;
+	border:none;
+	margin-left:-24px;
+}
+.preContainer table tr {
+	height:50px;
+}
+.preContainer table tr td label {
+	font-size:1.5em;
+	margin-right:10px;
+}
+.preContainer table tr td a {
+	color:#fff;
+	opacity:0.5;
+}
+/* rpNumTableA */
+a.rpNumTableA{
+	display:none;
+}
+
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+/* 登录表单输入框 css */
+input.input_log {
+	width: 260px;
+}
+/* 忘记密码、更换手机号、修改密码界面共用 长输入框 css */
+input.input_nl {
+	width: 180px;
+}
+/* 忘记密码、更换手机号、修改密码界面共用 短输入框 css */
+input.input_ns {
+	width: 85px;
+}
+/* 短输入框 css */
+input.input_s {
+	width: 260px;
+}
+/* 注册的输入验证码按钮 */
+input.input_reg_ns {
+	width:130px;
+	margin-right:31px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	
+ *	登录页面 css
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 登录界面容器 */
+.logContainer {
+	width: 100%;
+}
+/* 登录界面的logo大小 */
+img.logoImg {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 15px;
+}
+/* 长输入框的边距 */
+input.input_m {
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+/* 记住密码和忘记密码*/
+span.rNum, span.fNum {
+	width: 42%;
+}
+/* 登入按钮 */
+button.logBtn {
+	width: 85%;
+}
+span.rNum {
+	margin-bottom: 15px;
+	padding-left: 26px;
+}
+/* 验证码按钮 */
+input.codeBtn {
+	width:75px;
+	font-size:1.4em;
+}
+/* 提交或确认更换按钮 */
+.insetBtn {
+	width:190px;
+}
+table.rpNumTable tr td:nth-child(2) {
+	width:115px;
+}
+}
+.red:hover,.insetBtn:hover{
+	background-color: #e53b3b;
+}

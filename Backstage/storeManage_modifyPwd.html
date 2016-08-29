@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<title>修改密码</title>
+	<link rel="stylesheet" href="static/css/style.css" media="all" />
+	<!--[if IE]><link rel="stylesheet" href="static/css/ie.css" media="all" /><![endif]-->
+</head>
+<body>
+
+<!-- 顶部用户信息栏 start -->
+<div class="testing">
+	<section class="user">
+		<div class="profile-img">
+			<p><img src="static/img/logo.png" alt="" height="40" width="40" style="background:#fff;" /> 欢迎回来, 善为互联</p>
+		</div>
+		<div class="buttons">
+			<button class="ico-font">&#9206;</button>
+			<a href="login.html" class="button red">安全退出</a>
+		</div>
+	</section>
+</div>
+<!-- 顶部用户信息栏 end -->
+
+<!-- 左边目录栏 start -->
+<nav>
+	<ul>
+		<li>
+			<a href="index.html"><span class="icon">&#128202;</span> 数据报表</a>
+		</li>
+		<li>
+			<a href="memberList_user.html"><span class="icon">&#128100;</span>用户管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="memberList_promotMembers.html">代言列表</a></li>
+				<li><a href="memberList_lostPartner.html">普通用户</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="productManage.html"><span class="icon">&#128230;</span> 商品管理</a>
+			<ul class="submenu">
+				<li><a href="productEdit.html">商品上架</a></li>
+				<li><a href="productPutaway.html">已上架商品</a></li>
+				<li><a href="productSold_out.html">已下架商品</a></li>
+				<li><a href="productNotputaway.html">未上架商品</a></li>
+				<li><a href="productRepertory.html">库存不足商品</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="orderManage_shippedOrder.html"><span class="icon">&#128196;</span> 订单管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="orderManage_nonPayOrders.html">待支付</a></li>
+				<li><a href="orderManage_notShippedOrders.html">待发货</a></li>
+				<li><a href="orderManage_allOrders.html">待签收</a></li>
+				<li><a href="orderManag_confirmOrders.html">已发货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货处理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="logisticsManage.html"><span class="icon">&#128273;</span> 物流管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="logisticsShipments.html">发货</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="wm_applyRecords.html"><span class="icon">&#128273;</span> 财富管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="wm_balance.html">账号余额</a></li>
+				<li><a href="wm_commercialDetail.html">商户提现</a></li>
+				<li><a href="wm_incomeDetail.html">收支明细</a></li>
+				<li><a href="wm_endorseDetail.html">代言人提现</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="salesPromotion.html"><span class="icon">&#127942;</span> 促销活动</a>
+			<ul class="submenu">
+				<li><a href="salesPromotionTemplate.html">模板</a></li>
+			</ul>
+		</li>
+		<li class="section">
+			<a href="storeManage_modifyInfo.html"><span class="icon">&#127942;</span> 店铺信息</a>
+			<ul class="submenu">
+				<li><a href="storeAddphone.html">更换手机号</a></li>
+				<li><a href="storeManage_modifyPwd.html">修改密码</a></li>
+				<li><a href="incentiveRules.html">奖励规则</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="businessManage_commercial.html"><span class="icon">&#128101;</span> 商户管理</a>
+			<ul class="submenu">
+				<li><a href="businessManage_new.html">新增商户</a></li>
+				<li><a href="businessManage_termination.html">已解约商户</a></li>
+				<li><a href="businessManage_pastDue.html">已过期商户</a></li>
+				<li><a href="businessManage_freeze.html">已冻结商户</a></li>
+				<li><a href="businessManage_checkAll.html">商户通用设置</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="busin_messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="busin_messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- 左边目录栏 end -->
+
+<!-- 财富管理-提现申请 start -->
+<section class="content">
+	<section class="widget" style="height:600px;">
+		<header>
+			<span class="icon">&#128273;</span>
+			<hgroup>
+				<h1>修改密码</h1>
+			</hgroup>
+		</header>
+		<div class="content">
+			<div style="width:100%;">
+				<div class="storeTableContainer">
+					<form class="" action="" method="post">
+						<table class="commodityTable site-box">
+							<tr>
+								<td class="textRight">注册手机号 :</td>
+								<td>
+									<input type="text" value="请输入注册手机号"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight">验证码 :</td>
+								<td>
+									<input type="text" class="loInput" value="请输入验证码"/> <button class="reds ">获取验证码</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight">输入新密码 :</td>
+								<td>
+									<input type="text" value="请输入您的新密码"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight">再次输入新密码 :</td>
+								<td>
+									<input type="text" value="请再次输入新密码"/>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<button class="blue subBtn">确认</button>
+									<button class="reds subBtn">取消</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</section>
+<!-- 财富管理-提现申请 end -->
+
+<!-- js start -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.tablesorter.min.js"></script>
+<!-- js end -->
+
+</body>
+</html>

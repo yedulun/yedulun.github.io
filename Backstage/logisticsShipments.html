@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>寄件人地址</title>
+	<link rel="stylesheet" href="static/css/style.css" media="all" />
+<!--[if IE]><link rel="stylesheet" href="static/css/ie.css" media="all" /><![endif]-->
+	<script src="static/js/Chart.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="static/font/iconfont.css" />
+</head>
+<body>
+
+<!-- 顶部用户信息栏 start -->
+<div class="testing">
+<section class="user">
+	<div class="profile-img">
+		<p><img src="static/img/logo.png" alt="" height="40" width="40" style="background:#fff;" /> 欢迎回来, 善为互联</p>
+	</div>
+	<div class="buttons">
+		<button class="ico-font">&#9206;</button>
+		<a href="login.html" class="button red">安全退出</a>
+	</div>
+</section>
+</div>
+<!-- 顶部用户信息栏 end -->
+
+<!-- 左边目录栏 start -->
+<nav>
+	<ul>
+		<li>
+			<a href="index.html"><span class="icon">&#128202;</span> 数据报表</a>
+		</li>
+		<li>
+			<a href="memberList_user.html"><span class="icon">&#128100;</span>用户管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="memberList_promotMembers.html">代言列表</a></li>
+				<li><a href="memberList_lostPartner.html">普通用户</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="productManage.html"><span class="icon">&#128230;</span> 商品管理</a>
+			<ul class="submenu">
+				<li><a href="productEdit.html">商品上架</a></li>
+				<li><a href="productPutaway.html">已上架商品</a></li>
+				<li><a href="productSold_out.html">已下架商品</a></li>
+				<li><a href="productNotputaway.html">未上架商品</a></li>
+				<li><a href="productRepertory.html">库存不足商品</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="orderManage_shippedOrder.html"><span class="icon">&#128196;</span> 订单管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="orderManage_nonPayOrders.html">待支付</a></li>
+				<li><a href="orderManage_notShippedOrders.html">待发货</a></li>
+				<li><a href="orderManage_allOrders.html">待签收</a></li>
+				<li><a href="orderManag_confirmOrders.html">已发货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货处理</a></li>
+			</ul>
+		</li>
+		<li class="section">
+			<a href="logisticsManage.html"><span class="icon">&#128273;</span> 物流管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="logisticsShipments.html">发货</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="wm_applyRecords.html"><span class="icon">&#128273;</span> 财富管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="wm_balance.html">账号余额</a></li>
+				<li><a href="wm_commercialDetail.html">商户提现</a></li>
+				<li><a href="wm_incomeDetail.html">收支明细</a></li>
+				<li><a href="wm_endorseDetail.html">代言人提现</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="salesPromotion.html"><span class="icon">&#127942;</span> 促销活动</a>
+			<ul class="submenu">
+				<li><a href="salesPromotionTemplate.html">模板</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="storeManage_modifyInfo.html"><span class="icon">&#127942;</span> 店铺信息</a>
+			<ul class="submenu">
+				<li><a href="storeAddphone.html">更换手机号</a></li>
+				<li><a href="storeManage_modifyPwd.html">修改密码</a></li>
+				<li><a href="incentiveRules.html">奖励规则</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="businessManage_commercial.html"><span class="icon">&#128101;</span> 商户管理</a>
+			<ul class="submenu">
+				<li><a href="businessManage_new.html">新增商户</a></li>
+				<li><a href="businessManage_termination.html">已解约商户</a></li>
+				<li><a href="businessManage_pastDue.html">已过期商户</a></li>
+				<li><a href="businessManage_freeze.html">已冻结商户</a></li>
+				<li><a href="businessManage_checkAll.html">商户通用设置</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="busin_messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="busin_messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- 左边目录栏 end -->
+
+<!-- 数据报表内容 start -->
+<section class="content content-box">
+
+	<!-- 我的物流 start -->
+	<section class="widget">
+		<header>
+			<span class="icon">&#128200;</span>
+			<hgroup>
+				<h1>寄件人地址</h1>
+			</hgroup>
+
+		</header>
+
+		<div class="content site-box">
+			<span>当前使用地址:</span>
+			<div>
+				<p>深圳市福田区金田路3037号金中环商务大厦4105室</p>
+				<p>善为互联</p>
+				<p>18816409599</p>
+				<a href="">收起更多
+					<i></i>
+				</a>
+			</div>
+			<button class="blue">使用新地址</button>
+			<div id="addSite" style="width:100%;">
+				<div class="storeTableContainer">
+					<form class="" action="" method="post">
+						<table class="commodityTable site-box">
+							<tr>
+								<td class="textRight"><i class="textRed">*</i> 寄件人 :</td>
+								<td>
+									<input type="text" class="loInput"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight"><i class="textRed">*</i> 地址 :</td>
+								<td>
+									<select name="" id="province">选择省/直辖市
+										<option value="">广东省</option>
+										<option value="">湖北省</option>
+										<option value="">河北省</option>
+									</select>
+									<select name="" id="">选择城市
+										<option value="">深圳</option>
+										<option value="">广州</option>
+										<option value="">北京</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="text"  class="bigInput"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight">邮编 :</td>
+								<td><input type="text" class="loInput"/></td>
+							</tr>
+							<tr>
+								<td class="textRight"><i class="textRed">*</i> 手机 :</td>
+								<td>
+									<input type="text" class="loInput"/><span>手机和电话至少填写一个</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="textRight">电话 :</td>
+								<td>
+									<input type="text" class="shInput"/>-<input type="text" class="mxInput" style="margin-left:6px;"/>-<input type="text" class="shInput"style="margin-left:6px;"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+
+			</div>
+			<ul id="site">
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+				<li><input type="radio" class="radio"/>姓名 电话 省 市详细地址。</li>
+			</ul>
+		</div>
+
+		</div>
+	</section>
+	<!-- 我的物流 end -->
+	
+	<!-- 数据统计 start -->
+	<section class="widget">
+		<header>
+			<span class="icon">&#128200;</span>
+			<hgroup>
+				<h1>收件人地址</h1>
+			</hgroup>
+
+		</header>
+
+		<div class="content">
+			<div class="storeTableContainer">
+				<form class="" action="" method="post">
+					<table class="commodityTable site-box">
+						<tr>
+							<td class="textRight"><i class="textRed">*</i> 寄件人 :</td>
+							<td>张三</td>
+						</tr>
+						<tr>
+							<td class="textRight"><i class="textRed">*</i> 地址 :</td>
+							<td>广东省深圳市XXXXXXXXXXXXXXXXX</td>
+						</tr>
+						<tr>
+							<td class="textRight">邮编 :</td>
+							<td>332222</td>
+						</tr>
+						<tr>
+							<td class="textRight"><i class="textRed">*</i> 手机 :</td>
+							<td>13000000000</td>
+						</tr>
+						<tr>
+							<td class="textRight">电话 :</td>
+							<td>0755-88888888</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		</div>
+	</section>
+</section>
+<!-- 数据报表内容 end -->
+
+<!-- 数据展示标签 start -->
+
+<section class="content bg-dataDis">
+	<div class="content masking-box"></div>
+	<div class="dataDis">
+		<h1>数据展示标签</h1>
+		<ul>
+			<li class="blue"><a href="">今日订单</a></li>
+			<li class="blue"><a href="">今日交易额</a></li>
+			<li class="blue"><a href="">今日加入代言人</a></li>
+			<li class="blue"><a href="">代言人总数</a></li>
+			<li class="gray"><a href="">浏览量</a></li>
+			<li class="gray"><a href="">月销售订单</a></li>
+			<li class="gray"><a href="">月销售额</a></li>
+			<li class="gray"><a href="">日销售额</a></li>
+		</ul>
+		<p class="left">*默认为四项</p>
+		<div class="clear"></div>
+			<button class="blue" style="margin-left:50px;">确认</button>
+			<button class="red">取消</button>
+
+	</div>
+	</section>
+<section class="content bg-chanData">
+	<div class="content masking-box"></div>
+	<div class="dataDis">
+		<h1>增加数据显示</h1>
+		<select>选择
+			<option value="">年龄</option>
+			<option value="">性别</option>
+			<option value="">身高</option>
+		</select>
+		<table class="chanData-table">
+			<tr>
+				<td><span class="right">设置组数:</span></td>
+				<td><input type="text" class="left"/>(组)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><span class="right">年龄:</span></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"/>～</td>
+				<td><input type="text"/>(岁)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><i style="color:red; font-size:20px; vertical-align: middle;">*</i>最多只能设置六组</td>
+				<td></td>
+			</tr>
+		</table>
+		<button class="blue" style="margin-left:50px;">确认</button>
+		<button class="red">取消</button>
+
+	</div>
+</section>
+
+<!-- 数据展示标签 end -->
+
+<!-- js start -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.wysiwyg.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.checkbox.min.js"></script>
+<script src="static/js/flot.js"></script>
+<script src="static/js/flot-time.js"></script>
+<script src="static/js/flot-pie.js"></script>
+<script src="static/js/flot-graphs.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// 左右切换图表
+$('.cycle').cycle({
+	fx: "scrollHorz",
+	timeout: 0,
+    slideResize: 0,
+    prev:    '.left-btn', 
+    next:    '.right-btn'
+});
+</script>
+
+
+<!-- js end -->
+
+</body>
+</html>

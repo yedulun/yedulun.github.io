@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>注册</title>
+<link type="text/css" rel="stylesheet" href="static/css/common.css" />
+<script type="text/jscript" src="static/js/common.js"></script>
+</head>
+
+<body bgcolor="#1BA9B9">
+	<div class="logContainer">
+		<img class="logoImg" src="static/img/logo.png" />
+		<h1>善分销后台管理系统</h1>
+		<form method="link" action="login.html">
+			<table class="logoTable register">
+				<tr>
+					<td class="right">注册手机号:</td>
+					<td>
+						<input class="input_log input_m" type="text" value="请输入注册手机号" onfocus="if(value=='请输入注册手机号') {value=''}" onblur="if (value=='') {value='请输入注册手机号'}" />
+					</td>
+					<td class="right">
+						<a href="#">更换手机号</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="right">验证码:</td>
+					<td>
+						<input class="input_reg_ns input_m" type="text" value="输入验证码" onfocus="if(value=='输入验证码') {value=''}" onblur="if (value=='') {value='输入验证码'}" /><input type="button" value="获取验证码" class="red codeBtn input_m" onclick="goNum(this)" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="right">设置密码:</td>
+					<td>
+						<input class="input_log input_m" type="text" value="请设置您的密码" onfocus="if(value=='请设置您的密码') {value=''}" onblur="if (value=='') {value='请设置您的密码'}" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="right">请再次输入设置密码:</td>
+					<td>
+						<input class="input_log input_m" type="text" value="请再次输入您设置的新密码" onfocus="if(value=='请再次输入您设置的新密码') {value=''}" onblur="if (value=='') {value='请再次输入您设置的新密码'}" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button class="logBtn gray" style="margin-top:15px;">登录</button>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<!-- 更换手机号 -->
+			<table class="logoTable" id="change-phone">
+				<tr>
+					<td class="right">注册手机号:</td>
+					<td>
+						<input class="input_log input_m" type="text" value="请输入注册手机号" onfocus="if(value=='请输入注册手机号') {value=''}" onblur="if (value=='') {value='请输入注册手机号'}" />
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="right">验证码:</td>
+					<td>
+						<input class="input_reg_ns input_m" type="text" value="输入验证码" onfocus="if(value=='输入验证码') {value=''}" onblur="if (value=='') {value='输入验证码'}" /><input type="button" value="获取验证码" class="red codeBtn input_m" onclick="goNum(this)" />
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="right">输入新手机号:</td>
+					<td>
+						<input class="input_log input_m" type="text" value="请输入您的新手机号" onfocus="if(value=='请输入您的新手机号') {value=''}" onblur="if (value=='') {value='请输入您的新手机号'}" />
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button class="red logBtn" style="margin-top:15px;">确认</button>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+
+		</form>
+
+	</div>
+</body>
+</html>

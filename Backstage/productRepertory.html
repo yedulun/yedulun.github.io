@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>库存不足商品</title>
+<link rel="stylesheet" href="static/css/style.css" media="all" />
+<!--[if IE]><link rel="stylesheet" href="static/css/ie.css" media="all" /><![endif]-->
+<link rel="stylesheet" href="static/css/upLoadStyle.css" />
+	<link type="text/css" rel="stylesheet" href="static/font/iconfont.css" />
+<style type="text/css">
+.content {
+	min-height:inherit;
+	height:600px;
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部用户信息栏 start -->
+<div class="testing">
+<section class="user">
+	<div class="profile-img">
+		<p><img src="static/img/logo.png" alt="" height="40" width="40" style="background:#fff;" /> 欢迎回来, 善为互联</p>
+	</div>
+	<div class="buttons">
+		<button class="ico-font">&#9206;</button>
+		<a href="login.html" class="button red">安全退出</a>
+	</div>
+</section>
+</div>
+<!-- 顶部用户信息栏 end -->
+
+<!-- 左边目录栏 start -->
+<nav>
+	<ul>
+		<li>
+			<a href="index.html"><span class="icon">&#128202;</span> 数据报表</a>
+		</li>
+		<li>
+			<a href="memberList_user.html"><span class="icon">&#128100;</span>用户管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="memberList_promotMembers.html">代言列表</a></li>
+				<li><a href="memberList_lostPartner.html">普通用户</a></li>
+			</ul>
+		</li>
+		<li class="section">
+			<a href="productManage.html"><span class="icon">&#128230;</span> 商品管理</a>
+			<ul class="submenu">
+				<li><a href="productEdit.html">商品上架</a></li>
+				<li><a href="productPutaway.html">已上架商品</a></li>
+				<li><a href="productSold_out.html">已下架商品</a></li>
+				<li><a href="productNotputaway.html">未上架商品</a></li>
+				<li><a href="productRepertory.html">库存不足商品</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="orderManage_shippedOrder.html"><span class="icon">&#128196;</span> 订单管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="orderManage_nonPayOrders.html">待支付</a></li>
+				<li><a href="orderManage_notShippedOrders.html">待发货</a></li>
+				<li><a href="orderManage_allOrders.html">待签收</a></li>
+				<li><a href="orderManag_confirmOrders.html">已发货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货处理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="logisticsManage.html"><span class="icon">&#128273;</span> 物流管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="logisticsShipments.html">发货</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="wm_applyRecords.html"><span class="icon">&#128273;</span> 财富管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="wm_balance.html">账号余额</a></li>
+				<li><a href="wm_commercialDetail.html">商户提现</a></li>
+				<li><a href="wm_incomeDetail.html">收支明细</a></li>
+				<li><a href="wm_endorseDetail.html">代言人提现</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="salesPromotion.html"><span class="icon">&#127942;</span> 促销活动</a>
+			<ul class="submenu">
+				<li><a href="salesPromotionTemplate.html">模板</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="storeManage_modifyInfo.html"><span class="icon">&#127942;</span> 店铺信息</a>
+			<ul class="submenu">
+				<li><a href="storeAddphone.html">更换手机号</a></li>
+				<li><a href="storeManage_modifyPwd.html">修改密码</a></li>
+				<li><a href="incentiveRules.html">奖励规则</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="businessManage_commercial.html"><span class="icon">&#128101;</span> 商户管理</a>
+			<ul class="submenu">
+				<li><a href="businessManage_new.html">新增商户</a></li>
+				<li><a href="businessManage_termination.html">已解约商户</a></li>
+				<li><a href="businessManage_pastDue.html">已过期商户</a></li>
+				<li><a href="businessManage_freeze.html">已冻结商户</a></li>
+				<li><a href="businessManage_checkAll.html">商户通用设置</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="busin_messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="busin_messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- 左边目录栏 end -->
+
+<!-- 商品管理-商品上架 start -->
+<section class="content">
+	<section class="widget">
+		<form action="">
+		<header>
+			<span class="icon">&#128230;</span>
+			<hgroup>
+				<h1>库存不足商品</h1>
+			</hgroup>
+		</header>
+		<div class="content">
+			<form action="">
+				<table class="putawayTable">
+					<tr>
+						<td class="textRight">上架时间 :</td>
+						<td>
+							<input type="data"/>～
+						</td>
+						<td>
+							<input type="data"/>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="textRight">单量 :</td>
+						<td>
+							<input type="text"/>～
+						</td>
+						<td>
+							<input type="text"/>（个）
+						</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="">&nbsp;&nbsp;日&nbsp;&nbsp;</a>&nbsp;&nbsp;
+							<a href="">&nbsp;&nbsp;周&nbsp;&nbsp;</a>&nbsp;&nbsp;
+							<a href="">&nbsp;&nbsp;月&nbsp;&nbsp;</a>&nbsp;&nbsp;
+							<a href="">&nbsp;&nbsp;年&nbsp;&nbsp;</a>&nbsp;&nbsp;
+							<a href="">&nbsp;&nbsp;总和&nbsp;&nbsp;</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="textRight">成本价 :</td>
+						<td>
+							<input type="text"/>～
+						</td>
+						<td>
+							<input type="text"/>（元）
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="textRight">单价 :</td>
+						<td>
+							<input type="text"/>～
+						</td>
+						<td>
+							<input type="text"/>（元）
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="textRight">浏览量 :</td>
+						<td>
+							<input type="text"/>～
+						</td>
+						<td>
+							<input type="text"/>（人）
+						</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="comKind">
+					<tr>
+						<td>商品的种类 :</td>
+						<td><a href="">衣服</a></td>
+						<td><a href="">游戏设备</a></td>
+						<td><a href="">鞋子</a></td>
+						<td><a href="">零食</a></td>
+						<td><a href="">电子产品</a></td>
+						<td><a href="">虚拟产品</a></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="content allCommodity">
+			<!-- 搜索框及批量导出按钮 start -->
+			<div class="btnLine">
+				<form action="" method="" style="float:left; margin-left:15px;">
+					关键词 :<input class="btn_style" type="search" placeholder="请输入关键字" /><br/>
+					<button class="plBtn" >搜索</button>
+				</form>
+				<div class="classify-box left">
+					<table class="classify">
+						<tr>
+							<td>已上架</td>
+							<td>已下架</td>
+							<td>未上架</td>
+							<td>库存不足商品</td>
+						</tr>
+					</table>
+					<table class="classify">
+						<tr>
+							<td>限时抢</td>
+							<td>满减</td>
+							<td>打折</td>
+							<td>赠</td>
+							<td>包邮</td>
+						</tr>
+					</table>
+				</div>
+
+				<button class="plBtn btn-bottom">批量导出</button>
+				<div class="checAll"><input type="checkbox" class="checkbox selectAll"/><span>所有商品</span></div>
+			</div>
+			<!-- 主要表格 start -->
+
+			<table id="myTable" class="pmTableRepertory editable" border="0" width="100">
+				<thead>
+				<tr>
+					<th>
+						<input type="checkbox" class="checkbox selectAll"/>
+					</th>
+					<th style="background-image:none;">图片</th>
+					<th>上架时间</th>
+					<th style="background-image:none;">商品名</th>
+					<th>单量</th>
+					<th>剩余库存</th>
+					<th>成本价</th>
+					<th>单价</th>
+					<th>浏览量</th>
+					<th style="background-image:none;">管理</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn blue" href="#">上架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn blue" href="#">上架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" class="checkbox"/>
+					</td>
+					<td>
+						<img src="static/img/uiface1.png" alt="" height="40" width="40" />
+					</td>
+					<td>2016-5-6 19:47:55</td>
+					<td>
+						<span>耐撕小裙子</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>567</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>12345</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>88</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123(促)/159</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<span>123456</span>
+						<i class="iconfont edit">&#xe7a9;</i>
+						<div class="editList">
+							<ul>
+								<li class="changeName">修改</li>
+								<li>隐藏</li>
+								<li>复原</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<a class="optionBtn blue" href="productCompile_repertory.html">编辑</a>
+						<a class="optionBtn red" href="#">下架</a>
+					</td>
+				</tr>
+				</tbody>
+
+			</table>
+			<!-- 主要表格 end -->
+
+			<div class="tableInfoDiv">
+				<!-- 记录 -->
+				<span class="tableInfo">共30条记录，共12页</span>
+
+				<!-- 翻页 -->
+				<ul class="pageNum">
+					<li><a href="">首页</a></li>
+					<li><a href="">上一页</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">下一页</a></li>
+					<li><a href="">尾页</a></li>
+				</ul>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+			<div class="clear"></div>
+			<div class="plBtn-box">
+				<button class="supBtn">批量上架</button>
+				<button class="subBtn">批量下架</button>
+			</div>
+		</form>
+		<div class="clear"></div>
+	</section>
+</section>
+<!-- 商品管理-商品上架 end -->
+
+<!-- js start -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.tablesorter.min.js"></script>
+<!-- 上传图片 -->
+<script src="static/js/upImg.js" type="text/javascript"></script> 
+<!-- js end -->
+
+</body>
+</html>

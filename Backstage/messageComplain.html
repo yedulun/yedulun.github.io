@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title>消息投诉</title>
+<link rel="stylesheet" href="static/css/style.css" media="all" />
+<!--[if IE]><link rel="stylesheet" href="static/css/ie.css" media="all" /><![endif]-->
+</head>
+<body>
+
+<!-- 顶部用户信息栏 start -->
+<div class="testing">
+<section class="user">
+	<div class="profile-img">
+		<p><img src="static/img/logo.png" alt="" height="40" width="40" style="background:#fff;" /> 欢迎回来, 善为互联</p>
+	</div>
+	<div class="buttons">
+		<button class="ico-font">&#9206;</button>
+		<a href="login.html" class="button red">安全退出</a>
+	</div>
+</section>
+</div>
+<!-- 顶部用户信息栏 end -->
+
+<!-- 左边目录栏 start -->
+<nav>
+	<ul>
+		<li>
+			<a href="index.html"><span class="icon">&#128202;</span> 数据报表</a>
+		</li>
+		<li>
+			<a href="memberList_user.html"><span class="icon">&#128100;</span>用户管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="memberList_promotMembers.html">代言列表</a></li>
+				<li><a href="memberList_lostPartner.html">普通用户</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="productManage.html"><span class="icon">&#128230;</span> 商品管理</a>
+			<ul class="submenu">
+				<li><a href="productEdit.html">商品上架</a></li>
+				<li><a href="productPutaway.html">已上架商品</a></li>
+				<li><a href="productSold_out.html">已下架商品</a></li>
+				<li><a href="productNotputaway.html">未上架商品</a></li>
+				<li><a href="productRepertory.html">库存不足商品</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="orderManage_shippedOrder.html"><span class="icon">&#128196;</span> 订单管理<span class="pip">12</span></a>
+			<ul class="submenu">
+				<li><a href="orderManage_nonPayOrders.html">待支付</a></li>
+				<li><a href="orderManage_notShippedOrders.html">待发货</a></li>
+				<li><a href="orderManage_allOrders.html">待签收</a></li>
+				<li><a href="orderManag_confirmOrders.html">已发货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货</a></li>
+				<li><a href="orderManage_returnOrders.html">退换货处理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="logisticsManage.html"><span class="icon">&#128273;</span> 物流管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="logisticsShipments.html">发货</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="wm_applyRecords.html"><span class="icon">&#128273;</span> 财富管理 <span class="pip">7</span></a>
+			<ul class="submenu">
+				<li><a href="wm_balance.html">账号余额</a></li>
+				<li><a href="wm_commercialDetail.html">商户提现</a></li>
+				<li><a href="wm_incomeDetail.html">收支明细</a></li>
+				<li><a href="wm_endorseDetail.html">代言人提现</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="salesPromotion.html"><span class="icon">&#127942;</span> 促销活动</a>
+			<ul class="submenu">
+				<li><a href="salesPromotionTemplate.html">模板</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="storeManage_modifyInfo.html"><span class="icon">&#127942;</span> 店铺信息</a>
+			<ul class="submenu">
+				<li><a href="storeAddphone.html">更换手机号</a></li>
+				<li><a href="storeManage_modifyPwd.html">修改密码</a></li>
+				<li><a href="incentiveRules.html">奖励规则</a></li>
+			</ul>
+		</li>
+		<li class="section">
+			<a href="messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="businessManage_commercial.html"><span class="icon">&#128101;</span> 商户管理</a>
+			<ul class="submenu">
+				<li><a href="businessManage_new.html">新增商户</a></li>
+				<li><a href="businessManage_termination.html">已解约商户</a></li>
+				<li><a href="businessManage_pastDue.html">已过期商户</a></li>
+				<li><a href="businessManage_freeze.html">已冻结商户</a></li>
+				<li><a href="businessManage_checkAll.html">商户通用设置</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="busin_messageNotify.html"><span class="icon">&#127942;</span> 消息通知</a>
+			<ul class="submenu">
+				<li><a href="busin_messageComplain.html">投诉管理</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- 左边目录栏 end -->
+
+<!-- 会员列表-推广会员内容 start -->
+<section class="content">
+	<section class="widget">
+		<header>
+			<span class="icon">&#128100;</span>
+			<hgroup>
+				<h1>消息投诉</h1>
+			</hgroup>
+		</header>
+		<div class="content">
+			<!-- 所有商品选项框 -->
+			<div class="select_btn">
+				<label><input type="checkbox" class="checkbox selectAll" name=""> 所有商品</label>
+			</div>
+			
+			<!-- 所有商品选项框 end -->
+			
+			<!-- 主要表格 start -->
+			<table id="myTable" class="pmTableComplain" border="0" width="100%">
+				<thead>
+					<tr>
+						<th style="background-image:none;"><input type="checkbox" class="checkbox selectAll" name=""></th>
+						<th style="background-image:none;">状态</th>
+						<th style="background-image:none;">投诉人</th>
+						<th style="background-image:none;">商户商品</th>
+						<th style="background-image:none;">意见内容</th>
+						<th>发送时间</th>
+						<th style="background-image:none;">手机号</th>
+						<th style="background-image:none;">管理</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2016-6-6 19:37</td>
+						<td>12000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2016-6-6 13:47</td>
+						<td>13000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2016-6-5 19:47</td>
+						<td>14000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2016-2-6 19:47</td>
+						<td>13000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2015-6-6 19:47</td>
+						<td>13000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" name=""></td>
+						<td><i class="icon">&#xe623;</i></td>
+						<td>超超</td>
+						<td>231354</td>
+						<td>坑爹啊！！</td>
+						<td>2016-6-6 19:47</td>
+						<td>13000000000</td>
+						<td><a href="" class="optionBtn blue">查看</a><a href="" class="optionBtn red">删除</a></td>
+					</tr>
+				</tbody>
+				
+			</table>
+			<!-- 主要表格 end -->		
+			
+			<div class="tableInfoDiv">
+				<!-- 记录 -->
+				<span class="tableInfo">共30条记录，共12页</span>
+			
+				<!-- 翻页 -->
+				<ul class="pageNum">
+					<li><a href="">首页</a></li>
+					<li><a href="">上一页</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">下一页</a></li>
+					<li><a href="">尾页</a></li>
+				</ul>	
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- 会员列表-推广会员内容 end -->
+
+<!-- js start -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="static/js/cycle.js"></script>
+<script src="static/js/jquery.tablesorter.min.js"></script>
+<!-- js end -->
+
+</body>
+</html>
